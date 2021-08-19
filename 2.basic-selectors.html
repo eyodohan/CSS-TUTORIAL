@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* tüm h1 leri seç */
+        /* h1 {
+color: red;
+background-color: blue;
+}
+p {
+ color: red;
+ background-color: blue; 
+ 
+ YUKARIDA TÜM P LERİ SEÇTİK
+} */
+
+        /* h1, p {
+    color: chartreuse;
+    background-color: blue;
+
+    YUKARIDA TÜM H1 VE P LERİ VİRGÜL KOYARAK BERABER SEÇTİK
+} */
+
+        /* #logo {
+    color: red;
+    background-color: coral;
+
+    YUKARIDA ID İLE SEÇMEK İÇİN KARE KOYDUK
+} */
+        /* .info {
+    color: red;
+    background-color: cyan;
+
+    YUKARIDA CLASS A GÖRE SEÇMEK İÇİN NOKTA KULLANDIK
+} */
+        /* #logo, .lead {
+    color: darkblue;
+    background-color: darkorchid;
+
+    YUKARDA ID Sİ LOGO OLANI VE CLASS I LEAD OLANI BERABER SEÇTİK
+    BURADA İKİ ŞARTI SAĞLAYANI DEĞİL, İKİSİNİ BİRDEN SEÇTİK 
+    ÖNEMLİ!!
+} */
+
+/* #para1.lead{
+    color: darkred;
+    background-color: darkslategrey;
+
+    BURADA ID Sİ PARA1 VE CLASS I LEAD OLANLARI (YANİ HER İKİ ŞARTI BERABER SAĞLAYANLARI SEÇTİK
+    BUNU DA ARAYA BİR ŞEY KOYMADAN YAPTIK)
+} */
+
+/* a{
+    text-decoration: none;
+    BURADA TÜM LİNKLERİ SEÇİP ALTINDAKİ ÇİZGİYİ KALDIRDIK
+} */
+/* ul li a {
+    text-decoration: none;
+BURADA SADECE UL İÇİNDEKİ Lİ İÇİNDEKİ A ETİKETLERİNİ SEÇTİK
+BUNU DA SADECE BOŞLUK KOYARAK YAPTIK
+} */
+/* .info span {
+    color: red;
+    BURADA CLASS I İNFO OLAN SPANLARİ SEÇTİK
+} */
+
+/* .info .primary {
+    color: deepskyblue;
+
+    BURADA CLASS I INFO OLAN VE ALTINDA CLASS I PRIMARY OLANLARI SEÇTİK
+    BOŞLUK KULLANDIK
+} */
+
+/* * {
+    color: red;
+    font-size: 37px;
+    BURADA * EVRENSEL SEÇİCİYİ KULLANARAK BÜTÜN YAZILARA İŞLEM YAPABİLİYORUZ
+} */
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>header 1</h1>
+        <h1 id="logo">logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">contact</a>
+            </li>
+            <li><a href="#">services</a></li>
+        </ul>
+    </header>
+
+    <h1>
+        header 2
+    </h1>
+
+    <p class="info">Lorem ipsum dolor <span class="primary">amet, consectetur</span>  adipisicing elit. Eius, dolorum!</p>
+    <p id="para1" class="lead info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, alias.</p>
+    <p class="info">Lorem ipsum <span>amet</span> sit  consectetur adipisicing elit. Inventore, eligendi!</p>
+    <p>
+        test paragraph
+    </p>
+    <a href="#">home</a>
+</body>
+
+</html>

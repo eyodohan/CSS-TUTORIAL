@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.container {
+    background-color: red;
+    margin: 0 auto;
+    width: 75%;  
+    display: flex; 
+    min-height: 600px;
+    /* justify-content: space-around; */
+    justify-content: flex-start;
+}
+.box{
+    border: 1px black solid;
+    width: 200px;height: 100px;
+    background: grey;
+    margin: 10px;
+    text-align: center;
+}
+.box-1{
+    background: honeydew;
+    /* order: 3;
+    align-self: flex-end; */
+
+    /* ALIGN SELF İLE FLEX ITEM LARA KENDİNE ÖZEL YERLEŞME
+    YAPTIRABİLİYORUZ VE GÜZEL Bİ ÖZELLİK */
+
+    flex-grow: 1;
+}
+.box-2{
+    background: khaki;
+    /* order: 1; */
+    /* flex-grow: 10   ; */
+    /* FLEX GROW İLE İSTEDİĞİMİZ KUTUNUZ GENİŞLİĞİNİ YAYABİLİYORUZ
+    (DEFAULT OLARAK SIFIRDIR)SADECE FLEX DE DİYEBİLİRİZ */
+}
+.box-3{
+    background: green;
+    /* order: 2; */
+    /* EĞER FLEX ELEMANIMIZ VARSA İSE ORDER İLE SIRALAMAYI 
+    DEĞİŞTİREBİLİYORUZ */
+    /* flex-grow: 1; */
+}
+
+    </style>
+</head>
+
+<body>
+        <div class="container">
+            <div class="box box-1"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3"></div>
+        </div>
+</body>
+
+</html>

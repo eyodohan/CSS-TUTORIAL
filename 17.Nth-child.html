@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+/* p:nth-child(1){
+    color: red;
+}
+p:first-child{
+    color: blue;
+} */
+ /* NTH CHILD İLE SADECE BELİRLEDİĞİMİZ ELEMANLARI 
+ STİLLEYEBİLİYORUZ. an + b ŞEKLİNDE FORMÜLÜ VAR. N 0 DAN BAŞLAR VE BİR BİR ARTAR B YE DEĞEER VERMEZSEK 
+ O KABUL EDİLİR. BU FORMÜL SADECE TEK OLANLAR VEYA ÇİFT OLANLAR
+ ŞEKLİNDE AYIRMAMIZA OLANAK SAĞLAR*/
+
+ /* p:nth-child(even){
+     color: blue;
+ } */
+/* YUKARIDA EVEN İLE ÇİFT OLAN ELEMANLARI ALDIK SADECE */
+
+/* p:nth-child(odd){
+    color: coral;
+}
+ODD İLE TEK ELEMANLARI SEÇTİK.
+
+p:nth-child()
+ */
+
+ul {
+    font-size: 1.5em;
+    list-style-type: none;
+    /* LİST STYLE TYPE İLE LİSTENİN BAŞINAKİ NOKTALARI KALDIRDIK */
+}
+
+ul li:nth-child(2n){
+    color: red;
+}
+/* YUKARIDA 2N DİYEREK ÇİFT SAYILI ELEMANLARI SEÇTİK */
+
+ul li:nth-child(n+4) {
+    background: black;
+}
+
+/*YUKARIDA UL Lİ Yİ n+4 DİYEREK ARKA PLANINI RENKLENDİRDİK*/
+
+    </style>
+
+</head>
+<body>
+    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dicta?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dicta?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dicta?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dicta?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dicta?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dicta?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dicta?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dicta?</p> -->
+
+<ul>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+</ul>
+
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box
+        }
+
+        .container {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            /* flex-direction: column; */
+            /* DEFAULT OLARAK FLEX DIRECTION YÖNÜ HER ZAMAN ROW (SATIR)
+            BİZ BUNU FLEX DIRECTION COLUMN DERSEK YUKARDAN AŞAĞIYA YÖNÜNÜ
+            DEĞİŞTİRMİŞ OLURUZ. 
+            BUNUN SONUCUNDA NE DEĞİŞİYOR DERSEK ŞU ŞEKİLDE AÇIKLAYABİLİRİZ
+            JUSTIFY-CONTENT İLE ALIGN-ITEMS LARIN GÖREVİ DEĞİŞİYOR .ASLINDA OLAY
+            ŞU JUSTIFY CONTENT DEFAULT OLARAK SATIR YÖNÜNDE SIRALAR AMA BİZ COLUMN
+            DİYEREK DİKEY EKSENDE DE KUTULARI (DIV) SIRALAYABİLİRİZ*/
+            min-height: 600px;
+            background: black;
+            justify-content:center;
+            flex-wrap: wrap;
+        
+            /* ELEMANLARI YATAYDA DEĞİŞİK KONUMLANDIRMAK İÇİN 
+            JUSTIFY-CONTENT ÖZELLİĞİNİ KULLANIYORUZ. JUSTIFY FLEX END 
+            DERSEK VEYA CENTER DERSEK ONA GÖRE ELEMANLAR YER DEĞİŞTİRİR.
+            YİNE AYNI ŞEKİLDE JUSTIFY-CONTENT: SPACE EVENLY VEYA SPACE AROUND
+            KULLANAB"İLİRİZ.  */
+
+            /* BİR DE ALIGN-ITEMS ÖZELLİĞİ VAR. DEFAULT ÖZELLİĞİ STRETCH */
+            align-items: center;
+        }
+
+        .box {
+            text-align: center;
+            background: chartreuse;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- flex container -->
+
+    <div class="container">
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 2</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <!-- O KADAR ÇOK DİV EKLEDİM Kİ OLŞAN KUTULAR CONTEINER İN İÇİNE SIĞMADI
+        VE OTOMADİK OLARAK DİV LERİM DARALDI. BUNUN ÖNÜNE GEÇMEK İÇİN FLEX WRAP ÖZELLİĞİNİ 
+    KULLANIYORUZ-->
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <!-- BEN FLEX WRAP KULLANDIM VE YENİ EKLENEN DİV LER CONTEINER İÇİNDE OTOMATİK OLARAK ALTA
+    GEÇTİ AMA BU SEFER CONTAINER TAMAMEN DOLUNCA YENİ EKLEDİĞİM KUTULAR TAŞTI. BUNU ÖNLEMEK İÇİN İSE
+CONTAINER A VERDİĞİMİZ YÜKSEKLİĞİ MİN-HEIGHT ŞEKLİNDE VERİNCE BU SORUN DA ÇÖZÜLDÜ -->
+    </div>
+</body>
+
+</html>

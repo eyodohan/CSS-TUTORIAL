@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* .fixed-top{
+    width: 50%;
+    padding: 20px;
+    background: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+} */
+
+        /* .red {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;  /*position relative uyguladığımızda
+            neye uygulamış isek bulunduğu konumdan kayıyor */
+        /* top: 10px;
+            left: 10px; */
+        /* BLUE KUTUYU SONRADAN YAZDIĞIM İÇİN OLUŞAN SAYFADA RED KUTU
+            BLUE NİN ALTINDA KALDI. EĞER Z-INDEX VERİRSEK BU DURUMUN 
+            ÖNÜNE GEÇİYORUZ */
+        /* z-index: 1;
+           
+        }
+
+        .blue {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: relative;
+        } */
+
+        .outer-box {
+            width: 200px;
+            height: 200px;
+            background: burlywood;
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+
+        .inner-box {
+            width: 50px;
+            height: 50px;
+            background: blue;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            /* 
+            OLUŞTURDUĞUMUZ İKİ KUTUYU BİRBİRİNE GÖRE KONUMLANDIRMAK
+            İSTİYORSAK BİRİNE POSITION: ABSOLUTE DİĞERİNE İSE 
+            POSITION : RELATIVE VERMEMİZ GEREKİYOR (RELATIVE VERMEZ İSEK 
+            DEFAULT OLARAK POSITION: STATIC OLARAK KALDIĞINDAN HAREKET
+            ETMEYECEKTİR. RELATIVE YERİNE FIXED VERSEK DE OLUYOR. 
+            BU İŞLEMİ YAPTIKTAN SONRA NORMALDE DEFAULT OLARAK KONUMLANDIRMALAR
+            SOL ÜSTTEN YAPILIYORDU, BU ŞEKİLDE İSE RELATIVE OLARAK ATADIĞIMIZ 
+            KUTUNUN SOL ÜSTÜ SIFIR NOKTAMIZ OLDU. ARTIK POSITION ABSOLUTE VERDİĞİMİZ
+            KUTUYU HAREKET ETTİREBİLİRİZ (RELATIVE E GÖRE)) */
+        }
+    </style>
+</head>
+
+<!-- <body style="height: 1000px;"> -->
+<!-- BODY E YÜKSEKLİK VERDİĞİMİZ İÇİN OLUŞAN SAYFADA SIĞMADIĞINDAN
+SCROLL OLUŞTU. BURADA AMACIMIZ SAYFAYI YUKARU AŞAĞI YAPSAK 
+BİLE OLUŞTURDUĞUMUZ NAVIGATION BARLARIN SABİT KALARAK SAYFADA
+HER ZAMAN GÖRÜNMESİ. BUNU DA YUKARIDA YAPTIĞIMIZ GİBİ
+POSITION FIXED İLE YAPTIK -->
+
+<!-- <div class="red"></div>
+    <div class="blue"></div> -->
+
+<!-- <div class="fixed-top">udemy</div> -->
+
+<div class="outer-box">
+    <div class="inner-box"></div>
+</div>
+
+</body>
+
+</html>

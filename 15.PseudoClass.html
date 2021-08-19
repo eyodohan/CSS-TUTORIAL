@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* PSEUDO CLASS NE DEMEK EĞER BEN Bİ LİNKİN ÜZERİNE GELİNDİĞİNDE
+İMLECİN DEĞİŞMESİNİ DAHA DOĞRUSU LİNKİN RENKLENMESİ, TIKLANDIKTAN
+SONRA RENGİNİN NE OLACAĞINI, ETRAFINDA BİR TANE BORDER OLUŞMASINI
+VS GİBİ OLAYLAR OLMASINI İSTERSEM PSEUDO CLASS KULLANIYORUM */
+
+        /* a {
+            border: 5px solid white;
+            font-size: 24px;
+
+        } */
+
+        /* a:hover {
+            color: red;
+        }
+
+        /* HOVER İLE LİNK ÜZERİNE GELİNCE RENGİNİN KIRMIZIYA DÖNMESİNİ SAĞLADIK */
+
+        /* a:link {
+            color: green;
+        }
+
+        /* LİNK PSEUDOCLASS I İLE LINKE HENÜZ TIKLANMADI İSE RENGİNİN NE OLACAĞINI BELİRLEDİK */
+
+        /* a:visited {
+            color: black;
+        } */
+
+        /* VISITED PSEUDO CLASS İLE LİNKE TIKLANDIKTAN SONRA RENGİNİN NE OLACAĞINI BELİRLEDİK */
+
+        /* a:active {
+            color: blue;
+        } */
+
+        /* ACTİVE PSEUDO CLASS İLE LİNKE TIKLARKEN LİNKİN RENGİNİN NE OLACAĞINI BELİRLEDİK */
+
+        /* input {
+            font-size: 1.5em;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid black;
+
+            BURADA INPUT UN ÖZELLİKLERİNİ GİRDİK
+        }
+
+        input:focus {
+            outline: 0px;
+            border: 2px solid red;
+
+            INPUT FOCUS İLE ŞUNU YAPTIK. BEN İNPUTA TIKLADIĞIMDA
+            RENGİ KIRMIZI OLSUN,DEFAULT OLAN MAVİ OLMASIN. 2 PX LİK 
+            ÇERÇEVE OLUŞSUN DEDİK.
+        } */
+        
+        a {
+            color: white;
+            font-size: 1.5em;
+            display: inline-block;
+            /* DEFAULT OLARAK INLINE OLAN LINKI DÖNÜŞTÜRDÜK.
+            YÜKSEKLİK VE GENİŞLİK VEREBİLMEK İÇİN*/
+            background: blue;
+            border-radius: 5px;
+            padding: 10px text-decoration: none;
+            /*LİNKİN ALTINDAKİ ÇİZGİYİ KALDIRDIK*/
+        }
+
+        a:hover {
+            background: white;
+            color: blue;
+            border: 1px solid blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">Facebook</a> <br>
+    <!-- <input type="text" placeholder="ADIN"> -->
+
+</body>
+
+</html>

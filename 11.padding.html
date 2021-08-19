@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.box-1{
+    width: 500px;
+    height: 200px;
+    border: 5px solid red;
+    padding: 20px 50px;
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    YUKARDA PADDİNG LERE SINIR VERDİK*/
+/* padding: 20px 20px 20px 20px;
+padding: 20px; */
+
+/* BU KONU ÖNEMLİ NEDEN!!
+ÇÜNKÜ BEN BİR KUTU AÇIYORUM VE YUKARDA OLDUĞU GİB 500 PX LİK
+GENİŞLİK VERMEME RAĞMEN ÜZERİNE PADDİNG LER İLE 5 PX LİK 
+BORDER DA EKLENİNCE BENİM KUTUMUN GENİŞŞLİĞİ ARTIUYOR. 
+BEN BUNU İSTEMEDİĞİMDEN KUTUMUN GENİŞLİĞİNİ SABİTLEMEM LAZIM */
+/* BUNU DA BOX-SIZING İLE YAPIYORUZ */
+
+box-sizing: border-box;
+/* 
+EĞER TÜM KUTULARIN GENİŞLİĞİ AYNI OLSUN DERSEK UNİVERSAL
+SEÇİCİNİN ALTINA KOYMALIYIZ BORDER-BOX I  */
+
+
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, numquam?
+    </div>
+    
+</body>
+</html>
